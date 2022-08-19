@@ -4,8 +4,8 @@ function configureListeners() {
 
 
      for (var i = 0; i < images.length; i++) {
-        document.getElementByID (images[i].id).addEventListener('mouseover', addOpacity, false)
-        document.getElementByID (images[i].id).addEventListener('mouseout', removeOpacity, false)
+        document.getElementById (images[i].id).addEventListener('mouseover', addOpacity, false)
+        document.getElementById (images[i].id).addEventListener('mouseout', removeOpacity, false)
     }  
 }
 
@@ -82,7 +82,7 @@ function getProductInfo(paintColor) {
         case 'pn8':
             // set variables for price and color name and invoke a function to update the price   
             price = "16.99"
-            colorName "Solid Purple"
+            colorName = "Solid Purple"
             updatePrice (colorName, Price)
             break;   
         case 'pn9':
